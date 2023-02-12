@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Raleway:wght@100;200;300;400;700;800&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  letter-spacing: 1px;
+  color: #37393b;
+}
+
+h1,
+h2 {
+  white-space: nowrap;
+}
+
+header h1 {
+  margin: 0;
+  font-family: "Gentium Basic", serif;
+  font-weight: 300;
+  font-size: 40px;
+  color: black;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 15px;
+
+}
+
+header h2 {
+  margin: 0;
+  margin-bottom: 15px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  font-style: italic;
+  letter-spacing: 3px;
+  color: black;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+hr {
+  border-color: black;
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 5px;
+
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style-type: none;
+  column-gap: 20px;
+  padding: 0;
+}
+
+nav ul li {
+  min-width: 0;
+}
+
+nav ul li a {
+
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 3px;
+  color: #172029;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+
+
+}
+
+header .header-banner {
+  background-image: url("p1y2toidud/banner.jpg");
+  width: 100%;
+  height: calc(100vh - 450px);
+  background-repeat: no-repeat;
+  background-position: center;
+  object-fit: cover;
+
+}
+
+.meist {
+  margin-right: 20px;
+}
+
+.meist-pilt img {
+  display: none;
+}
+
+.meist h1,
+.retseptid h1 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+  color: black;
+  text-transform: uppercase;
+}
+
+.retseptid h1 {
+  font-size: 35px;
+}
+
+.meist,
+.retseptid h1 {
+  margin-left: 30px;
+}
+
+.container img {
+  max-width: 250px;
+  width: 100%;
+  height: auto;
+  -webkit-flex-basis: 250px;
+  -moz-flex-basis: 250px;
+  flex-basis: 250px;
+  border-radius: 50%;
+
+}
+
+.retsepti-pildi-osa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 20px;
+  margin-bottom: 30px;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  -webkit-flex-basis: 300px;
+  -moz-flex-basis: 300px;
+  flex-basis: 300px;
+
+}
+
+.post-header {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  letter-spacing: 3px;
+  color: white;
+  text-transform: uppercase;
+  text-shadow: 3px 3px 9px #111111;
+  white-space: nowrap;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+footer {
+  width: 100%;
+  height: 150px;
+  background-color: lightgray;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3%;
+
+}
+
+.kontakt-info {
+  text-align: left;
+  display: inline;
+}
+
+.kontakt-info,
+.footer-sm {
+  display: table-cell;
+  vertical-align: middle;
+
+}
+
+.kontakt-info p {
+  line-height: 5px;
+}
+
+.footer-sm img {
+  width: 40px;
+  display: block;
+}
+
+.footer-sm img:nth-child(1) {
+  margin-bottom: 8px;
+
+}
+
+@media only screen and (min-width: 900px) {
+  .meist {
+    margin: 0 10% 5%;
+  }
+
+  p {
+    font-size: 1.4vw;
+    margin: 0;
+  }
+
+  .kontakt-info p {
+    line-height: 17px;
+    font-size: 15px;
+  }
+
+  .meist-sisu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto 0 auto;
+
+  }
+
+  .meist-tekst {
+    flex: 1;
+    margin: 0;
+    margin-right: 20px;
+
+  }
+
+  .meist-pilt {
+    flex: 1;
+
+  }
+
+  .meist-pilt img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  hr {
+    display: none;
+  }
+
+  header .header-banner {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+
+  }
+
+  .retseptid h1 {
+    display: none;
+  }
+
+  .container img {
+    width: 90%;
+  }
+
+  .retsepti-pildi-osa {
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 6% 4%;
+  }
+
+  .post-header {
+    font-size: 25px;
+  }
+
+
+}
